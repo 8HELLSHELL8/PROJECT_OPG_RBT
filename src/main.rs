@@ -18,4 +18,5 @@ fn trapeze(little_base:i32, big_base:i32, left_side:i32, right_side:i32, height:
 
 fn main() {
     trapeze(14,26, 10, 10, 8);
+    println!("IT WORKS!")
 }
