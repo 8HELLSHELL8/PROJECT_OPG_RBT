@@ -1,13 +1,15 @@
 fn trapeze(little_base:i32, big_base:i32, left_side:i32, right_side:i32, height:i32){
-    //perimetr
-    let perimetr: i32 = little_base + big_base + left_side + right_side;
+   
+    //ПЕРИМЕТР
+    let perimetr: i32 = little_base + big_base + left_side + right_side; //Рассчет суммы длин всех сторон
 
-    //middle line
-    let middle_line: f64 = ((little_base as f64) + (big_base as f64))/2.0;
+    //СРЕДНЯЯ ЛИНИЯ
+    let middle_line: f64 = ((little_base as f64) + (big_base as f64))/2.0; //Рассчет средней линии
 
-    //area
-    let area:f64 = middle_line * (height as f64); 
+    //ПЛОЩАДЬ
+    let area:f64 = middle_line * (height as f64); //Рассчет площади через среднюю линию и высоту
 
+    //Вывод 
     println!("Данные трапеции:");
     println!("Периметр = {} ", perimetr);
     println!("Площадь = {} ", area);
@@ -51,9 +53,11 @@ fn main() {
     let height: i32 = 10;//Высота прямоугольника
     prmtr_area_diag(width, height);//Вызов функции
     println!("");
+
     trapeze(14,26, 10, 10, 8);
     println!("IT WORKS!");
     println!("");
+
     let side_1: f64 = 3.0;
     let side_2: f64 = 8.0;
     let side_3: f64 = 5.0;
