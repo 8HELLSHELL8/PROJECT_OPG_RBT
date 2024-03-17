@@ -18,24 +18,23 @@ fn trapeze(little_base:i32, big_base:i32, left_side:i32, right_side:i32, height:
 
 
 
-fn perimetr_area_isravnobedr(side_1: f64, side_2: f64,side_3: f64){
-    if side_1 + side_2 <= side_3 || side_1 + side_3 <= side_2 || side_2 + side_3 <= side_1{
+fn perimetr_area_isravnobedr(side_1: f64, side_2: f64,side_3: f64){ //Функция выводит на экран значения периметра, площади и проверяет на равнобедренность
+    if side_1 + side_2 <= side_3 || side_1 + side_3 <= side_2 || side_2 + side_3 <= side_1{ // Проверка на существование треугольника
         println!("Треугольник не существует")
     }else{
-    let perimetr: f64 = side_1 + side_2 + side_3;
+    let perimetr: f64 = side_1 + side_2 + side_3; // Вычисление периметра исходного треугольника
     println!("Периметр треугольника равен {}", perimetr);
-    let half_perimetr: f64 = (side_1 + side_2 + side_3) / 2.0;
-    let area: f64 = half_perimetr * (half_perimetr - side_1) * (half_perimetr - side_2) * (half_perimetr - side_3);
+    let half_perimetr: f64 = (side_1 + side_2 + side_3) / 2.0; // Вычисление полупериметра исходного треугольника
+    let area: f64 = half_perimetr * (half_perimetr - side_1) * (half_perimetr - side_2) * (half_perimetr - side_3); // Вычисление площади треугольника по формуле Герона
     println!("Площадь треугольника равна {}", area);
 
-    if side_1 == side_2 || side_1 == side_3 || side_2 == side_3{
+    if side_1 == side_2 || side_1 == side_3 || side_2 == side_3{ // Проверка на равнобедренность треугольника
         println!("Треугольник равнобедренный")
     }else{
         println!("Треугольник неравнобедренный")
     }
 }
 }
-
 
 
 
@@ -58,9 +57,9 @@ fn main() {
     println!("IT WORKS!");
     println!("");
 
-    let side_1: f64 = 3.0;
-    let side_2: f64 = 8.0;
-    let side_3: f64 = 5.0;
-    perimetr_area_isravnobedr(side_1, side_2, side_3);
+    let side_1: f64 = 3.0;// Первая сторона треугольника
+    let side_2: f64 = 8.0;// Вторая сторона треугольника
+    let side_3: f64 = 5.0;// Третья сторона треугольника
+    perimetr_area_isravnobedr(side_1, side_2, side_3);//
 }
    
