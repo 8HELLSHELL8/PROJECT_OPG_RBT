@@ -18,6 +18,6 @@ fn perimetr_area_isravnobedr(side_1: f64, side_2: f64,side_3: f64){
     fn main() {
     let side_1: f64 = 3.0;
     let side_2: f64 = 8.0;
-    let side_3: f64 = 5.0;
+    let side_3: f64 = 8.0;
     perimetr_area_isravnobedr(side_1, side_2, side_3)
 }
