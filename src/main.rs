@@ -13,7 +13,7 @@ fn trapeze(little_base:i32, big_base:i32, left_side:i32, right_side:i32, height:
     println!("Данные трапеции:");
     println!("Периметр = {} ", perimetr);
     println!("Площадь = {} ", area);
-    println!("Длина средней линии = {} ", middle_line);
+    println!("Длина средней линии = {} ", middle_line); //добавляем комментарий к коду вывода
 }
 
 fn perimetr_area_isravnobedr(side_1: f64, side_2: f64,side_3: f64){ //Функция выводит на экран значения периметра, площади и проверяет на равнобедренность
@@ -39,7 +39,7 @@ fn prmtr_area_diag(width: i32, height: i32){//Функция выводит на
     println!("Площадь прямоугольника равна {}", width * height);//Вывод площади
     println!("Периметр прямоугольника равен {}", 2 * (width + height));//Вывод периметра
     let diag_is_sqrd: i32 = width.pow(2) + height.pow(2);//Переменная diag_is_sqrd - длина диагонали в квадрате
-    println!("Длина диагонали прямоугольника равна {}", (diag_is_sqrd as f64).sqrt());//Вывод диагонали
+    println!("Длина диагонали прямоугольника равна {}", (diag_is_sqrd as f64).sqrt());//Вывод диагонали прямоугольника
 }
 
 
@@ -51,3 +51,4 @@ fn main() {
     perimetr_area_isravnobedr(4.0, 8.0, 8.0);//Вызов функции perimetr_area_isravnobedr
     println!("IT WORKS!");
 }
+
