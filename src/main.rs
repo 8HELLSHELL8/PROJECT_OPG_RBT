@@ -46,6 +46,6 @@ fn main() {
     println!("");
     trapeze(14,26, 10, 10, 8);//Вызов функции trapeze
     println!("");
-    perimetr_area_isravnobedr(4.0, 8.0, 5.0);//Вызов функции perimetr_area_isravnobedr
+    perimetr_area_isravnobedr(4.0, 8.0, 8.0);//Вызов функции perimetr_area_isravnobedr
     println!("IT WORKS!");
 }
