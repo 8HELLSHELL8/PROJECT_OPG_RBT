@@ -13,7 +13,7 @@ fn trapeze(little_base:i32, big_base:i32, left_side:i32, right_side:i32, height:
     println!("Данные трапеции:");
     println!("Периметр = {} ", perimetr);
     println!("Площадь = {} ", area);
-    println!("Длина средней линии = {} ", middle_line);
+    println!("Длина средней линии = {} ", middle_line); //добавляем комментарий к коду вывода
 }
 
 fn perimetr_area_isravnobedr(side_1: f64, side_2: f64,side_3: f64){ //Функция выводит на экран значения периметра, площади и проверяет на равнобедренность
